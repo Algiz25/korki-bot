@@ -73,8 +73,8 @@ def check_for_updates():
     if latest_ad.get('description') != last_seen_ad.get('description'):
         print("New offer detected!")
 
-        # if latest_ad['subject'].lower() in ['matematyka', 'biologia']:
-        send_discord_alert(latest_ad)
+        if latest_ad['subject'].lower() in ['matematyka', 'biologia']:
+            send_discord_alert(latest_ad)
 
         with open('last_seen.json', 'w', encoding='utf-8') as file:
             json.dump(latest_ad, file, ensure_ascii=False, indent=4)
