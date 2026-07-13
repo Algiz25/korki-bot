@@ -36,6 +36,6 @@ jobs:
         run: |
           git config --global user.name "Scraper Bot"
           git config --global user.email "bot@example.com"
-          git add last_seen.json
-          git commit -m "Update last seen ad" || exit 0
-          git push
+          git add last_seen.json || true
+          git commit -m "Update last seen ad" || true
+          git push || true
