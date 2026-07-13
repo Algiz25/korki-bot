@@ -1,0 +1,41 @@
+name: Scraper Cron Job
+
+# This tells GitHub to run the script every 15 minutes
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  
+  # This allows you to also trigger the script manually by clicking a button
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Grab your code from the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Install Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 3. Install the web scraping libraries
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      # 4. Run your scraper script
+      - name: Run Scraper
+        run: python scraper.py
+
+      # 5. Save the 'memory' by updating the json file in the repository
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "Scraper Bot"
+          git config --global user.email "bot@example.com"
+          git add last_seen.json
+          git commit -m "Update last seen ad" || exit 0
+          git push
