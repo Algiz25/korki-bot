@@ -50,7 +50,8 @@ def send_discord_alert(offer):
     message += f"**Od:** {offer['name']}\n"
     message += f"**Lokalizacja:** {offer['location']}\n"
     message += f"**Cena:** {offer['price']} {offer['time_detail']}\n\n"
-    message += f"> {offer['description']}"
+    message += f"{offer['description']}\n"
+    message += f"@everyone"
 
     # send to discord
     payload = {"content": message}
