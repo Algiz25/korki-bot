@@ -1,2 +1,2 @@
 # korki-bot
-Bot for scraping data from a website and sending discord notifications about new offers.
+Simple bot for scraping data from a website and sending discord notifications about new offers.
