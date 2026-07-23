@@ -1,12 +1,12 @@
 {
-    "subject": "język angielski",
-    "name": "Beata",
-    "description": "Cześć! Szukam dobrego nauczyciela j. angielskiego do regularnej\nwspółpracy, który główny nacisk kładzie na konwersację i wymowę (poziom A2). Fajnie, aby była do...",
-    "location": "Wrocław",
-    "price": "90",
+    "subject": "algebra",
+    "name": "Rafał Gardian",
+    "description": "Masz problem z macierzami, czy liczbami zespolonymi? A może poruszanie się wśród abstrakcyjnych struktur algebraicznych, takich jak ciała, czy pierścienie...",
+    "location": "Gdańsk",
+    "price": "80",
     "time_detail": "/ 60 minut",
     "date_added": [
-        "22",
+        "23",
         "lipca",
         "2026"
     ]
