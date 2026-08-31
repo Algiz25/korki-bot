@@ -1,12 +1,12 @@
 {
-    "subject": "informatyka",
-    "name": "Marcin M",
-    "description": "Dzien dobry,\nPoszukuje korepetytora do zajec  z obsługi komputera.\n \nPozdrawiam\nMarcin",
-    "location": "Katowice",
-    "price": "",
-    "time_detail": "cena do ustalenia",
+    "subject": "matematyka",
+    "name": "Paulina Dec",
+    "description": "Rzeszów - Szukam korepetycji z matematyki dla uczennicy czwartej klasy liceum ogólnokształcącego - przygotowanie do matury na poziomie podstawowym. Lekcje...",
+    "location": "Tyczyn",
+    "price": "100",
+    "time_detail": "/ 60 minut",
     "date_added": [
-        "30",
+        "31",
         "sierpnia",
         "2026"
     ]
